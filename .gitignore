@@ -4,3 +4,5 @@ ClassDiagram.cd
 Win32Project2.vcxproj
 Win32Project2.vcxproj.filters
 Win32Project2.vcxproj.user
+*.o
+*.so

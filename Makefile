@@ -6,7 +6,7 @@ jnilibflags=-Wno-write-strings  -fPIC -I/usr/lib/jvm/java-6-openjdk-amd64/includ
 
 svm_jni: svm_classify svm_learn_main svm_hideo 
 	${cc} ${jniflags} svm_jni.o svm_jni.cpp
-	${cc} ${jnilibflags} libsvm_jni.so *.o
+	${cc} ${jnilibflags} libSVMLight.so *.o
 svm_classify: svm_common
 	${cc} ${cflagslib} svm_classify.o svm_classify.cpp
 svm_common:

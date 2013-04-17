@@ -5,7 +5,7 @@ jnilibflags=-Wno-write-strings  -fPIC -I/data/home/barthel/bin/jdk1.7.0_05/inclu
 
 svm_jni: svm_classify svm_learn_main svm_hideo 
 	${cc} ${jniflags} svm_jni.o svm_jni.cpp
-	${cc} ${jnilibflags} libsvm_jni.so *.o
+	${cc} ${jnilibflags} libSVMLight.so *.o
 svm_classify: svm_common
 	${cc} ${cflagslib} svm_classify.o svm_classify.cpp
 svm_common:

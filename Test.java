@@ -1,6 +1,6 @@
 public class Test {
 	static {
-		System.loadLibrary("SVMLight");
+		System.loadLibrary("svm_jni");
 	}
 	
 	public static void main(String[] args) {
